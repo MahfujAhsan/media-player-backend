@@ -8,7 +8,7 @@ const videoRoutes = require('./routes/video.route');
 const path = require('path');
 
 // middlewares
-app.use(cors());
+app.use(cors({ credentials: true, origin: 'http://localhost:5173'}));
 app.use(express.json());
 
 // routes
